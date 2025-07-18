@@ -528,8 +528,86 @@
         </div>
     </section>
 
-    <!-- Flatpickr JS -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <footer class="bg-[#552200] text-white py-12 md:py-16 lg:py-20 border-t-4 border-blue-800">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+            <!-- Top Row: Logo, Newsletter, Quick Links -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12 md:mb-16 items-start">
+                <!-- Column 1: Logo -->
+                <div class="flex justify-left md:justify-start">
+                    <!-- Replace with your actual logo image path -->
+                    <img src="Asstes/images/Footer_logo.svg" alt="Company Logo" class="h-18">
+                </div>
+
+                <!-- Column 2: Newsletter Subscription -->
+                <div class="flex flex-col items-bottom md:items-start text-center md:text-left gap-2">
+                    <h3 class="text-lg font-semibold mb-4 uppercase">DON'T BE LEFT BEHIND</h3>
+                    <p class="text-sm mb-8">SUBSCRIBE TO OUR NEWSLETTER</p>
+                    <div class="flex w-full max-w-sm bg-white rounded-lg overflow-hidden shadow-md">
+                        <input type="email" placeholder="ENTER YOUR EMAIL" class="flex-grow p-3 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none">
+                        <button class="bg-[#F5B333] text-white font-semibold py-3 px-6 hover:bg-[#E6A02E] transition duration-300">
+                            SUBSCRIBE
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Column 3: Quick Links -->
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <h3 class="text-lg font-semibold mb-4 uppercase">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">HOME</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">FROM ICE TO SAFARI!</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">WHO ARE WE?</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">DESTINATIONS</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Middle Row: Contact Information -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8 md:mb-10 items-center">
+                <!-- Column 1: Contact Us Text -->
+                <div class="flex justify-center md:justify-start">
+                    <h3 class="text-2xl font-semibold text-[#F5B333]">Contact Us</h3>
+                </div>
+
+                <!-- Column 2: Phone Numbers -->
+                <div class="flex items-center justify-center md:justify-start gap-2">
+                    <!-- Phone SVG icon -->
+                    <img src="Asstes/images/messages.svg" alt="" srcset="" class=" h-8">
+                    <div class="flex flex-col text-left">
+                        <p>+254 113 817 259</p>
+                        <p>+254 894 6126</p>
+                    </div>
+                </div>
+
+                <!-- Column 3: Email Addresses -->
+                <div class="flex items-center justify-center md:justify-start gap-2">
+                    <img src="Asstes/images/mail.svg" alt="" srcset="" class=" h-10">
+                    <div class="flex flex-col text-left">
+                        <p>info@journeyhome.co.ke</p>
+                        <p>carol@journeyhome.co.ke</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- White Horizontal Rule -->
+            <hr class="border-t border-white mb-8 md:mb-10">
+
+            <!-- Social Media Icons Row -->
+            <div class="flex justify-center space-x-6 mb-8 md:mb-10">
+                <img src="Asstes/images/facebook.svg" alt="" srcset="" class=" h-10">
+                <img src="Asstes/images/whatsapp.svg" alt="" srcset="" class=" h-10">
+                <img src="Asstes/images/linkedin.svg" alt="" srcset="" class=" h-10">
+                <img src="Asstes/images/instagram.svg" alt="" srcset="" class=" h-10">
+                <img src="Asstes/images/tiktok.svg" alt="" srcset="" class=" h-10">
+            </div>
+
+            <!-- Credits Part -->
+            <div class="text-center text-sm text-gray-300">
+                <p>&copy; 2025 Copyright: <span class="text-[#F5B333]">Meyone Bet</span>  | Developed By <a href="#" target="_blank" class="text-[#F5B333] hover:underline">Quick office Pointe</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Navbar Mobile Menu Toggle
