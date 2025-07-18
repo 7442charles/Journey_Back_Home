@@ -118,6 +118,14 @@
         .dot.active {
             background-color: white;
         }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
     </style>
 </head>
 <body class="bg-secondary text-accent">
@@ -402,104 +410,123 @@
     </section>
 
     <!-- Booking section -->
-     <section class="relative bg-[#D4A55C] overflow-hidden py-12 md:py-16 lg:py-20">
-    <!-- Background hot air balloons -->
-    <div class="absolute inset-0 z-0 opacity-20">
-        <img src="Asstes/images/HotAirBaloon.jpg" alt="Hot air balloons background" class="w-full h-full object-cover object-center">
-    </div>
+    <section class="relative bg-[#D4A55C] overflow-hidden py-12 md:py-16 lg:py-20">
+        <!-- Background hot air balloons -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="Asstes/images/HotAirBaloon.jpg" alt="Hot air balloons background" class="w-full h-full object-cover object-center">
+        </div>
 
-    <div class="relative z-10 container mx-auto px-4 md:px-8 lg:px-16 flex flex-col lg:flex-row items-center md:items-stretch lg:items-start gap-12">
-        <!-- Left Column: Text Content -->
-        <div class="lg:w-1/2 text-center lg:text-left text-white flex flex-col justify-center">
-            <div class="flex items-center justify-center lg:justify-start space-x-4 mb-4">
-                <hr class="w-12 h-0.5 bg-white">
-                <p class="text-sm font-medium uppercase tracking-wider">Book Your Safari Adventure</p>
-                <hr class="w-12 h-0.5 bg-white">
+        <div class="relative z-10 container mx-auto px-4 md:px-8 lg:px-16 flex flex-col lg:flex-row items-center md:items-stretch lg:items-start gap-12">
+            <!-- Left Column: Text Content -->
+            <div class="lg:w-1/2 text-center lg:text-left text-white flex flex-col justify-center">
+                <div class="flex items-center justify-center lg:justify-start space-x-4 mb-4">
+                    <hr class="w-12 h-0.5 bg-white">
+                    <p class="text-sm font-medium uppercase tracking-wider">Book Your Safari Adventure</p>
+                    <hr class="w-12 h-0.5 bg-white">
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Experience the Thrill of Africa with <br> <span class="bg-white text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 leading-tight px-4">A Journey Back Home</span>
+                </h1>
+                <p class="text-base md:text-lg mb-6 max-w-xl lg:max-w-none mx-auto lg:mx-0">
+                    Join us on an unforgettable journey through the African wilderness, where you'll encounter breathtaking landscapes, incredible wildlife, and unforgettable experiences.
+                </p>
+                <p class="text-base md:text-lg mb-8 max-w-xl lg:max-w-none mx-auto lg:mx-0">
+                    Our expert guides and carefully curated itineraries ensure that every moment of your safari is filled with wonder and excitement.
+                </p>
+                <a href="#" class="inline-block bg-white text-[#552200] font-semibold py-3 px-4 max-w-xs w-full text-center rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+                    Learn More About Our Safaris
+                </a>
             </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Experience the Thrill of Africa with <br> <span class="bg-white text-[#1c1917] px-4">A Journey Back Home</span>
-            </h1>
-            <p class="text-base md:text-lg mb-6 max-w-xl lg:max-w-none mx-auto lg:mx-0">
-                Join us on an unforgettable journey through the African wilderness, where you'll encounter breathtaking landscapes, incredible wildlife, and unforgettable experiences.
-            </p>
-            <p class="text-base md:text-lg mb-8 max-w-xl lg:max-w-none mx-auto lg:mx-0">
-                Our expert guides and carefully curated itineraries ensure that every moment of your safari is filled with wonder and excitement.
-            </p>
-            <a href="#" class="inline-block bg-white text-[#552200] font-semibold py-3 px-4 max-w-xs w-full text-center rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
-                Learn More About Our Safaris
-            </a>
-        </div>
 
-        <!-- Right Column: Booking Form -->
-        <div class="lg:w-1/2 p-8 md:p-10 rounded-2xl w-full max-w-lg lg:max-w-xl">
-            <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 text-center lg:text-left">
-                Book Your Dream Safari
-            </h2>
-            <p class="text-white mb-8 text-center lg:text-left">
-                Get ready for the ultimate African adventure. Fill out the form below to book your safari with Winseyus Safaris.
-            </p>
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <label for="name" class="block text-white text-sm font-medium mb-2">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A55C] bg-white text-gray-800">
-                </div>
-                <div>
-                    <label for="email" class="block text-white text-sm font-medium mb-2">Your Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A55C] bg-white text-gray-800">
-                </div>
-                <div>
-                    <label for="departure-date" class="block text-white text-sm font-medium mb-2">Departure Date</label>
-                    <div class="relative">
-                        <input type="date" id="departure-date" name="departure-date" placeholder="mm/dd/yyyy ---" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A55C] bg-white text-gray-800">
-                        <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
-                            <!-- Calendar Icon (SVG or similar) -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
-                            </svg>
-                        </span>
+            <!-- Right Column: Booking Form -->
+            <div class="lg:w-1/2 p-8 md:p-10 rounded-2xl w-full max-w-lg lg:max-w-xl">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 text-center lg:text-left">
+                    Book Your Dream Safari
+                </h2>
+                <p class="text-white mb-8 text-center lg:text-left">
+                    Get ready for the ultimate African adventure. Fill out the form below to book your safari with Winseyus Safaris.
+                </p>
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-white text-sm font-medium mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A55C] bg-white text-gray-800">
                     </div>
-                </div>
-                <div>
-                    <label for="safari-type" class="block text-white text-sm font-medium mb-2">Safari Type</label>
-                    <select id="safari-type" name="safari-type" class="w-full p-3 border border-gray-300 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#D4A55C]">
-                        <option>Game Drives</option>
-                        <option>Walking Safari</option>
-                        <option>Hot Air Balloon Safari</option>
-                        <option>Cultural Tour</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="destination" class="block text-white text-sm font-medium mb-2">Destination</label>
-                    <select id="destination" name="destination" class="w-full p-3 border border-gray-300 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#D4A55C]">
-                        <option>Nairobi National Park</option>
-                        <option>Maasai Mara</option>
-                        <option>Amboseli National Park</option>
-                        <option>Serengeti National Park</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="group-size" class="block text-white text-sm font-medium mb-2">Group Size</label>
-                    <select id="group-size" name="group-size" class="w-full p-3 border border-gray-300 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#D4A55C]">
-                        <option>Solo Traveler</option>
-                        <option>2-4 People</option>
-                        <option>5-8 People</option>
-                        <option>9+ People</option>
-                    </select>
-                </div>
-                <div class="md:col-span-2">
-                    <label for="comments" class="block text-white text-sm font-medium mb-2">Special Requests or Comments</label>
-                    <textarea id="comments" name="comments" rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A55C] bg-white text-gray-800"></textarea>
-                </div>
-                <div class="md:col-span-2">
-                    <button type="submit" class="w-full bg-[#E6772E] text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-[#D46B26] transition duration-300">
-                        Book Your Safari
-                    </button>
-                </div>
-            </form>
+                    <div>
+                        <label for="email" class="block text-white text-sm font-medium mb-2">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A55C] bg-white text-gray-800">
+                    </div>
+                    <div>
+                        <label for="departure-date" class="block text-white text-sm font-medium mb-2">Departure Date</label>
+                        <div class="relative">
+                            <input type="date" id="departure-date" name="departure-date" placeholder="mm/dd/yyyy ---" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A55C] bg-white text-gray-800">
+                            <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
+                                <!-- Calendar Icon (SVG or similar) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="safari-type" class="block text-white text-sm font-medium mb-2">Safari Type</label>
+                        <select id="safari-type" name="safari-type" class="w-full p-3 border border-gray-300 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#D4A55C]">
+                            <option>Game Drives</option>
+                            <option>Walking Safari</option>
+                            <option>Hot Air Balloon Safari</option>
+                            <option>Cultural Tour</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="destination" class="block text-white text-sm font-medium mb-2">Destination</label>
+                        <select id="destination" name="destination" class="w-full p-3 border border-gray-300 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#D4A55C]">
+                            <option>Nairobi National Park</option>
+                            <option>Maasai Mara</option>
+                            <option>Amboseli National Park</option>
+                            <option>Serengeti National Park</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="group-size" class="block text-white text-sm font-medium mb-2">Group Size</label>
+                        <select id="group-size" name="group-size" class="w-full p-3 border border-gray-300 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#D4A55C]">
+                            <option>Solo Traveler</option>
+                            <option>2-4 People</option>
+                            <option>5-8 People</option>
+                            <option>9+ People</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="comments" class="block text-white text-sm font-medium mb-2">Special Requests or Comments</label>
+                        <textarea id="comments" name="comments" rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A55C] bg-white text-gray-800"></textarea>
+                    </div>
+                    <div class="md:col-span-2">
+                        <button type="submit" class="w-full bg-[#E6772E] text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-[#D46B26] transition duration-300">
+                            Book Your Safari
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Testimonial -->
+     <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+                <p class="text-base md:text-lg text-[#552200] max-w-2xl mx-auto">Hear from our happy adventurers about their unforgettable safari experiences.</p>
+            </div>
+
+            <!-- Testimonial Carousel Container -->
+            <!-- The overflow-hidden ensures that only the visible part of the carousel is shown -->
+            <div class="relative overflow-hidden py-4 no-scrollbar">
+                <!-- This inner div will contain all testimonial cards and will be animated -->
+                <div id="testimonial-carousel" class="flex gap-6 items-stretch" style="transform: translateX(0px);">
+                    <!-- Testimonial cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Flatpickr JS -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -605,8 +632,159 @@
             renderCarousel();
             startCarouselAutoPlay();
         });
-
-        
     </script>
+
+     <script>
+        // Data for testimonials
+        const testimonials = [
+            {
+                id: 1,
+                name: "Jane Doe",
+                avatar: "https://placehold.co/60x60/FFD700/000000?text=JD",
+                review: "Absolutely incredible experience! The guides were knowledgeable, the wildlife sightings were spectacular, and every detail was perfectly managed. Highly recommend Winseyus Safaris!",
+            },
+            {
+                id: 2,
+                name: "John Smith",
+                avatar: "https://placehold.co/60x60/A0BBE0/000000?text=JS",
+                review: "A truly unforgettable journey. From the moment we arrived, we felt completely immersed in the beauty of Africa. The accommodations were fantastic, and the safaris were beyond our expectations.",
+            },
+            {
+                id: 3,
+                name: "Emily White",
+                avatar: "https://placehold.co/60x60/C0C0C0/000000?text=EW",
+                review: "Winseyus Safaris provided a once-in-a-lifetime adventure. The hot air balloon ride was a highlight, and seeing the majestic animals in their natural habitat was awe-inspiring. Thank you!",
+            },
+            {
+                id: 4,
+                name: "David Green",
+                avatar: "https://placehold.co/60x60/FF6347/FFFFFF?text=DG",
+                review: "Professional, friendly, and passionate guides. They went above and beyond to ensure we had the best possible safari. Every moment was a joy. Can't wait to come back!",
+            },
+            {
+                id: 5,
+                name: "Sarah Brown",
+                avatar: "https://placehold.co/60x60/8A2BE2/FFFFFF?text=SB",
+                review: "An amazing trip! The cultural visits were insightful, and the game drives were thrilling. Winseyus Safaris truly delivers on its promise of an unforgettable African experience.",
+            },
+            {
+                id: 6,
+                name: "Michael Lee",
+                avatar: "https://placehold.co/60x60/3CB371/FFFFFF?text=ML",
+                review: "Flawless organization and breathtaking sights. The attention to detail made all the difference. This safari was everything I dreamed of and more. Highly recommended for anyone seeking adventure.",
+            },
+        ];
+
+        // Function to create a single testimonial card HTML
+        function createTestimonialCard(testimonial) {
+            return `
+                <div class="testimonial-card flex-shrink-0 w-full md:w-[calc(33.333%-16px)] lg:w-[calc(33.333%-16px)] p-2">
+                    <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col justify-between border border-gray-200">
+                        <p class="text-gray-700 text-base mb-4 italic leading-relaxed">"${testimonial.review}"</p>
+                        <div class="flex items-center mt-4">
+                            <img src="${testimonial.avatar}" alt="${testimonial.name}'s avatar" class="w-12 h-12 rounded-full mr-4 object-cover border-2 border-gray-100">
+                            <div>
+                                <p class="font-semibold text-gray-800">${testimonial.name}</p>
+                                <p class="text-sm text-[#552200]">Happy Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        const carousel = document.getElementById('testimonial-carousel');
+        let scrollPosition = 0;
+        const scrollSpeed = 0.5; // Adjust scroll speed (pixels per frame)
+        let animationFrameId;
+        let firstSetWidth = 0; // Stores the total pixel width of one full set of original cards
+
+        // Populate carousel with original and duplicated cards for infinite scroll
+        // Duplicating the set 2-3 times ensures a seamless loop before resetting
+        testimonials.forEach(t => carousel.innerHTML += createTestimonialCard(t));
+        testimonials.forEach(t => carousel.innerHTML += createTestimonialCard(t));
+        testimonials.forEach(t => carousel.innerHTML += createTestimonialCard(t));
+
+        // Function to measure the total width of one set of original testimonial cards
+        // This includes card widths and the gaps between them.
+        function measureFirstSetWidth() {
+            if (!carousel.children.length) return 0;
+
+            let width = 0;
+            // Sum the width of the first `testimonials.length` cards
+            for (let i = 0; i < testimonials.length; i++) {
+                const card = carousel.children[i];
+                if (card) {
+                    width += card.offsetWidth;
+                    // Add the gap value (gap-6 in Tailwind is 1.5rem = 24px)
+                    // This assumes Tailwind's gap utility applies consistent spacing.
+                    if (i < testimonials.length - 1) {
+                        width += 24; // Add the gap value (1.5rem = 24px for gap-6)
+                    }
+                }
+            }
+            return width;
+        }
+
+        // Animation loop for smooth scrolling
+        function animateScroll() {
+            // Only measure firstSetWidth once or on resize to optimize performance
+            if (firstSetWidth === 0) {
+                firstSetWidth = measureFirstSetWidth();
+                if (firstSetWidth === 0) { // If still 0, elements might not be rendered yet, retry
+                    animationFrameId = requestAnimationFrame(animateScroll);
+                    return;
+                }
+            }
+
+            scrollPosition -= scrollSpeed; // Move left (content appears to scroll right)
+
+            // If the scroll position has moved past the first full set of original cards, reset it
+            // This creates the infinite loop effect by jumping back to the start of the duplicated set
+            if (Math.abs(scrollPosition) >= firstSetWidth) {
+                scrollPosition = 0; // Reset to the beginning of the first duplicated set
+            }
+
+            carousel.style.transform = `translateX(${scrollPosition}px)`;
+            animationFrameId = requestAnimationFrame(animateScroll);
+        }
+
+        // Start animation when the window loads to ensure all elements are rendered
+        window.addEventListener('load', () => {
+            firstSetWidth = measureFirstSetWidth(); // Initial measurement after load
+            if (firstSetWidth > 0) {
+                animateScroll();
+            } else {
+                // Fallback for environments where elements might take longer to render
+                console.warn("Could not measure testimonial cards width initially. Retrying animation start.");
+                setTimeout(() => {
+                    firstSetWidth = measureFirstSetWidth();
+                    if (firstSetWidth > 0) animateScroll();
+                }, 500);
+            }
+        });
+
+        // Pause animation on mouse hover over the carousel area
+        carousel.parentElement.addEventListener('mouseenter', () => {
+            cancelAnimationFrame(animationFrameId);
+        });
+
+        // Resume animation when mouse leaves the carousel area
+        carousel.parentElement.addEventListener('mouseleave', () => {
+            animateScroll();
+        });
+
+        // Handle window resize: Recalculate widths and reset scroll to ensure seamlessness
+        window.addEventListener('resize', () => {
+            cancelAnimationFrame(animationFrameId); // Stop current animation
+            scrollPosition = 0; // Reset scroll position to prevent jumps during resize
+            carousel.style.transform = `translateX(${scrollPosition}px)`; // Apply reset immediately
+            firstSetWidth = measureFirstSetWidth(); // Recalculate based on new viewport size
+            if (firstSetWidth > 0) {
+                animateScroll(); // Restart animation
+            }
+        });
+    </script>   
+
 </body>
 </html>
