@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Journey Back Home</title>
+    <title>Journey Back Home - Your Tour & Adventure Company</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Journey Back Home is a cultural movement guiding souls to reconnect with African roots, celebrating identity, heritage, and purpose through spiritual, cultural, and physical return.">
-    <meta name="keywords" content="Journey Back Home, African identity, cultural movement, spiritual journey, cultural reconnection, African heritage, travel, tours, belonging, pride, purpose">
+    <meta name="description" content="Explore thrilling tours and unforgettable adventures with Journey Back Home. From icy landscapes to vibrant safaris, discover your next journey.">
+    <meta name="keywords" content="tours, adventure, travel, safari, ice, exploration, custom packages, destinations">
     <meta name="author" content="Journey Back Home Team">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.yourcompany.com/about"> <!-- Replace with your actual About Us URL -->
-    <meta property="og:title" content="About Us - Journey Back Home: Reconnecting with African Roots">
-    <meta property="og:description" content="Journey Back Home is a cultural movement guiding souls to reconnect with African roots, celebrating identity, heritage, and purpose through spiritual, cultural, and physical return.">
-    <meta property="og:image" content="https://www.yourcompany.com/images/og-about-us-image.jpg"> <!-- Replace with your actual image URL -->
+    <meta property="og:url" content="https://7442charles.github.io/Journey_Back_Home/"> <!-- Replace with your actual URL -->
+    <meta property="og:title" content="Journey Back Home - Your Tour & Adventure Company">
+    <meta property="og:description" content="Explore thrilling tours and unforgettable adventures with Journey Back Home. From icy landscapes to vibrant safaris, discover your next journey.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/7442charles/Journey_Back_Home/refs/heads/main/Asstes/images/Logo_lady.png"> <!-- Replace with your actual image URL -->
 
     <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.yourcompany.com/about"> <!-- Replace with your actual About Us URL -->
-    <meta property="twitter:title" content="About Us - Journey Back Home: Reconnecting with African Roots">
-    <meta property="twitter:description" content="Journey Back Home is a cultural movement guiding souls to reconnect with African roots, celebrating identity, heritage, and purpose through spiritual, cultural, and physical return.">
-    <meta property="twitter:image" content="https://www.yourcompany.com/images/twitter-about-us-image.jpg"> <!-- Replace with your actual image URL -->
+    <meta property="twitter:url" content="https://7442charles.github.io/Journey_Back_Home/"> <!-- Replace with your actual URL -->
+    <meta property="twitter:title" content="Journey Back Home - Your Tour & Adventure Company">
+    <meta property="twitter:description" content="Explore thrilling tours and unforgettable adventures with Journey Back Home. From icy landscapes to vibrant safaris, discover your next journey.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/7442charles/Journey_Back_Home/refs/heads/main/Asstes/images/Logo_lady.png"> <!-- Replace with your actual image URL -->
 
     <!-- Favicon Links -->
     <link rel="apple-touch-icon" sizes="180x180" href="Asstes/images/favicon_io/apple-touch-icon.png">
@@ -32,28 +32,10 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom colors for Tailwind */
-        :root {
-            --color-primary: #F5B333; /* Yellowish dominant */
-            --color-secondary: #ffffff; /* White */
-            --color-accent: #552200; /* Dark brown */
-            --color-black: #000000; /* Black for default text */
-        }
-        .bg-primary { background-color: var(--color-primary); }
-        .text-primary { color: var(--color-primary); }
-        .border-primary { border-color: var(--color-primary); }
-        .bg-accent { background-color: var(--color-accent); }
-        .text-accent { color: var(--color-accent); }
-        .text-black-default { color: var(--color-black); } /* For default text color */
 
-        /* Custom font */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
 </head>
-<body class="bg-secondary text-accent">
+<body>
+    <!-- Navbar -->
     <nav class="bg-white p-4 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
@@ -89,7 +71,7 @@
                         </div>
                         <!-- Dropdown stays visible when hovered -->
                         <div class="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-48 z-10 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
-                            <a href="#our-story" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-[#552200] rounded-t-md">Our Story</a>
+                            <a href="aboutUs.html#our-story" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-[#552200] rounded-t-md">Our Story</a>
                             <a href="aboutUs.html" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-[#552200]">Our Team</a>
                             <a href="index.html#testimonials" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-[#552200] rounded-b-md">Testimonials</a>
                         </div>
@@ -111,120 +93,44 @@
 
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white py-2 mt-2 rounded-md shadow-inner">
-            <a href="index.html" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-white rounded-md">Home</a>
+            <a href="#" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-white rounded-md">Home</a>
             <div class="relative group">
-                <button class="w-full text-left px-4 py-2 text-black-default hover:bg-primary hover:text-[#552200] rounded-md flex justify-between items-center" id="mobile-who-are-we-button">
+                <button class="w-full text-left px-4 py-2 text-black-default hover:bg-primary hover:text-white rounded-md flex justify-between items-center" id="mobile-who-are-we-button">
                     Who Are We?
                     <svg class="ml-2 w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <div id="mobile-who-are-we-dropdown" class="hidden bg-white shadow-inner rounded-md mt-1 mb-2">
-                    <a href="#our-story" class="block px-6 py-2 text-black-default hover:bg-primary hover:text-[#552200] rounded-t-md">Our Story</a>
-                    <a href="#" class="block px-6 py-2 text-black-default hover:bg-primary hover:text-[#552200]">Our Team</a>
-                    <a href="index.html#testimonials" class="block px-6 py-2 text-black-default hover:bg-primary hover:text-[#552200] rounded-b-md">Testimonials</a>
+                    <a href="aboutUs.html" class="block px-6 py-2 text-black-default hover:bg-primary hover:text-white rounded-t-md">Our Story</a>
+                    <a href="#" class="block px-6 py-2 text-black-default hover:bg-primary hover:text-white">Our Team</a>
+                    <a href="#testimonials" class="block px-6 py-2 text-black-default hover:bg-primary hover:text-white rounded-b-md">Testimonials</a>
                 </div>
             </div>
-            <a href="#" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-[#552200] rounded-md">From Ice to Safari</a>
-            <a href="#" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-[#552200] rounded-md">Destinations</a>
-            <a href="#" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-[#552200] rounded-md">Talk To Us</a>
+            <a href="#" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-white rounded-md">From Ice to Safari</a>
+            <a href="#" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-white rounded-md">Destinations</a>
+            <a href="#" class="block px-4 py-2 text-black-default hover:bg-primary hover:text-white rounded-md">Talk To Us</a>
             <a href="#" class="block text-center bg-accent text-white px-4 py-2 mt-2 mx-4 rounded-md font-bold hover:bg-opacity-90 transition duration-300 shadow-lg">
                 Custom Package
             </a>
         </div>
     </nav>
 
-    <!--About Us Hero section -->
+    <!--Packages Hero section -->
     <section class="relative h-[50vh] bg-cover bg-center flex items-center justify-center text-white overflow-hidden" style="background-image: url('Asstes/images/About_hero.png');">
         <!-- Overlay (optional for better text visibility) -->
         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
 
-        <!-- Centered Text -->
-        <h1 class="relative text-5xl font-bold z-10">About Us</h1>
-    </section>
-    
-    <!-- About Us body -->
-    <section class="max-w-7xl mx-auto px-6 py-16 relative" id="our-story">
-        <!-- Ribbon Image at the top border - half width and centered -->
-        <img src="Asstes/images/ribbon_bg.svg" alt="Decorative Ribbon" class="hidden lg:block absolute top-0 left-1/2 w-[50vw] transform -translate-x-1/2 -translate-y-1/2 z-20 object-cover">
-        <div class="flex flex-col md:flex-row items-start gap-10">
-
-            <!-- Left Image -->
-            <div class="w-full md:w-1/2">
-                <img src="Asstes/images/About_us.png" alt="About Us Image" class="w-full h-auto rounded-lg object-cover">
-            </div>
-
-            <!-- Right Content -->
-            <div class="w-full md:w-1/2 space-y-12">
-
-                <!-- Our Story -->
-                <div>
-                    <div class="flex items-center gap-3">
-                        <h2 class="text-3xl font-bold" style="color: #552200;">Our Story</h2>
-                        <div class="w-12 h-1" style="background-color: #552200;"></div>
-                    </div>
-
-                    <p class="leading-relaxed text-gray-700">
-                        A Journey Back Home is more than a brand — it’s a cultural movement, a soulful reconnection with our roots, and a celebration of African identity. Born from the heartbeat of the continent, our vision is to guide modern souls on a meaningful return — whether spiritual, cultural, or physical — from the cold isolation of foreign lands (“ice”) back to the vibrant warmth of Africa (“safari”).<br><br>
-                        We tell stories etched in tradition, boldness, and pride. Through our visuals, products, and experiences, we blend heritage and modern expression — reconnecting generations with a sense of belonging, pride, and purpose.
-                    </p>
-                </div>
-
-                <!-- Our Mission -->
-                <div>
-                <div class="flex items-center gap-3 mb-2">
-                    <img src="Asstes/images/bullseye_svg.svg" alt="Mission Icon" class="w-10 h-10">
-                    <h2 class="text-2xl font-semibold" style="color: #552200;">Our Mission</h2>
-                </div>
-                <p class="leading-relaxed text-gray-700">
-                    To inspire reconnection with African identity through powerful storytelling, cultural expression, and meaningful engagement with the continent.
-                </p>
-                </div>
-
-                <!-- Our Vision -->
-                <div>
-                <div class="flex items-center gap-3 mb-2">
-                    <img src="Asstes/images/telescope_svg.svg" alt="Vision Icon" class="w-10 h-10">
-                    <h2 class="text-2xl font-semibold" style="color: #552200;">Our Vision</h2>
-                </div>
-                <p class="leading-relaxed text-gray-700">
-                    To become a global bridge between the diaspora and Africa — turning memories, art, and history into living movements.
-                </p>
-                </div>
-
-            </div>
+        <!-- Centered Text Content -->
+        <div class="relative z-10 text-center">
+            <h1 class="text-5xl font-bold mb-2">From Ice To Safari</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold">The Adventure Your Soul Has Been Waiting For</h2>
         </div>
     </section>
 
-    <!-- Our standss Section -->
-    <section class="relative bg-cover bg-center text-white py-20 px-6 text-center" style="background-image: url('Asstes/images/About_hero.png');">
-        <!-- Overlay (optional for readability) -->
-        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
 
-        <!-- Content -->
-        <div class="relative z-10 max-w-4xl mx-auto">
-            <!-- Heading with sandwich lines -->
-            <div class="flex items-center justify-center gap-4 mb-8">
-                <div class="w-16 h-1 bg-[#F5B333]"></div>
-                <h2 class="text-2xl md:text-3xl font-bold tracking-wide uppercase" style="color: #F5B333;">
-                    THIS IS WHAT WE STAND FOR
-                </h2>
-                <div class="w-16 h-1 bg-[#F5B333]"></div>
-            </div>
-
-            <!-- Core Values -->
-            <div class="text-lg md:text-xl font-medium space-y-2">
-            <p class="text-white">
-                Cultural Pride &nbsp; | &nbsp;
-                Authentic Storytelling &nbsp; | &nbsp;
-                Unity Across Borders &nbsp; | &nbsp;
-                Empowerment Through Identity
-            </p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-[#552200] text-white py-12 md:py-16 lg:py-20 border-t-4">
+    <!-- Footer Section -->
+    <footer class="bg-[#552200] text-white py-12 md:py-16 lg:py-20 border-t-4 border-blue-800">
         <div class="container mx-auto px-4 md:px-8 lg:px-16">
             <!-- Top Row: Logo, Newsletter, Quick Links -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12 md:mb-16 items-start">
@@ -249,11 +155,11 @@
                 <div class="flex flex-col items-center md:items-start text-center md:text-left">
                     <h3 class="text-lg font-semibold mb-4 uppercase">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-300 hover:text-[#552200] transition duration-200">HOME</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-[#552200] transition duration-200">FROM ICE TO SAFARI!</a></li>
-                        <li><a href="aboutUs.html" class="text-gray-300 hover:text-[#552200] transition duration-200">WHO ARE WE?</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-[#552200] transition duration-200">DESTINATIONS</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-[#552200] transition duration-200">CONTACT US</a></li>
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition duration-200">HOME</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">FROM ICE TO SAFARI!</a></li>
+                        <li><a href="aboutUs.html" class="text-gray-300 hover:text-white transition duration-200">WHO ARE WE?</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">DESTINATIONS</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-200">CONTACT US</a></li>
                     </ul>
                 </div>
             </div>
