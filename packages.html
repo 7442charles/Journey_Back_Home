@@ -138,15 +138,9 @@
                         From Ice To Safari <br class="hidden md:block">The Adventure Your Soul Has <br class="hidden md:block">Been Waiting For You.
                     </h2>
                     
-                    <button class="w-full md:w-auto bg-[#F5B333] md:bg-[#552200] text-white text-2xl md:text-4xl px-4 py-2 rounded-lg md:rounded-md font-bold hover:bg-opacity-90 transition duration-300 shadow-lg flex-shrink-0 text-center">
-                        <!-- Mobile version -->
-                        <span class="md:hidden">
-                            Get for USD <span class="text-4xl text-[#552200]">2000/-</span>
-                        </span>
-                        <!-- Desktop version -->
-                        <span class="hidden md:inline">
-                            USD<br>2000
-                        </span>
+                    <button id="openModalBtn1" class="w-full md:w-auto bg-[#F5B333] md:bg-[#552200] text-white text-2xl md:text-4xl px-4 py-2 rounded-lg md:rounded-md font-bold hover:bg-opacity-90 transition duration-300 shadow-lg flex-shrink-0 text-center">
+                        <span class="md:hidden">Get for USD <span class="text-4xl text-[#552200]">2000/-</span></span>
+                        <span class="hidden md:inline">USD<br>2000</span>
                     </button>
 
                 </div>
@@ -225,7 +219,7 @@
 
                     <!-- BOOK THIS PACKAGE NOW Button -->
                     <div class="text-center mt-12">
-                        <button class="bg-[#F5B333] text-[#552200] px-8 py-4 rounded-md font-bold hover:bg-opacity-90 transition duration-300 shadow-lg">
+                        <button id="openModalBtn2" class="bg-[#F5B333] text-[#552200] px-8 py-4 rounded-md font-bold hover:bg-opacity-90 transition duration-300 shadow-lg">
                             BOOK THIS PACKAGE NOW FOR <span class="text-2xl">2000/-</span> USD only
                         </button>
                     </div>
@@ -301,6 +295,28 @@
         </div>
     </section>
 
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white w-[90%] max-w-xl p-6 rounded-lg shadow-xl relative">
+            <!-- Close Button -->
+            <button id="closeModalBtn" class="absolute top-2 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
+
+            <!-- Modal Content -->
+            <h2 class="text-2xl font-bold text-[#552200] mb-4 text-center">Booking Process</h2>
+            <ol class="list-decimal space-y-4 pl-6 text-gray-700 leading-relaxed">
+                <li>Pick your package – this is the one!</li>
+                <li>Message us on WhatsApp for more details and personalized help.</li>
+                <li>One of our team members will call you to confirm your booking.</li>
+            </ol>
+
+            <div class="mt-6 text-center">
+                <a href="https://wa.me/2547XXXXXXXX" target="_blank"
+                class="inline-block bg-[#25D366] text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                    Proceed to WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Section -->
     <footer class="bg-[#552200] text-white py-12 md:py-16 lg:py-20 border-t-4 ">
@@ -382,6 +398,24 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- booking modal js -->
+    <script>
+        const modal = document.getElementById('bookingModal');
+        const openBtn1 = document.getElementById('openModalBtn1');
+        const openBtn2 = document.getElementById('openModalBtn2');
+        const closeBtn = document.getElementById('closeModalBtn');
+
+        openBtn1.addEventListener('click', () => modal.classList.remove('hidden'));
+        openBtn2.addEventListener('click', () => modal.classList.remove('hidden'));
+        closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+
+        // Optional: Close on outside click
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) modal.classList.add('hidden');
+        });
+    </script>
 
     <script>
         // Navbar Mobile Menu Toggle
