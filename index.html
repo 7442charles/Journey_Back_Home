@@ -341,18 +341,18 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="relative w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden mt-16">
+    <section class="relative w-full h-auto min-h-[600px] md:min-h-[700px] lg:min-h-[800px] overflow-visible mt-2">
         <!-- Upper white background part -->
-        <div class="absolute top-0 left-0 w-full h-1/2 bg-white"></div>
+        <div class="absolute top-0 left-0 w-full h-1/2 bg-white z-0"></div>
 
         <!-- Lower yellowish background part -->
-        <div class="absolute bottom-0 left-0 w-full h-1/2 bg-primary"></div>
+        <div class="absolute bottom-0 left-0 w-full h-1/2 bg-primary z-0"></div>
 
         <!-- Content Wrapper: Image and Text -->
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-full h-1/2 flex flex-col md:flex-row items-end justify-center gap-4 md:gap-8 z-10 pb-8 md:pb-12 px-4">
+        <div class="relative w-full flex flex-col md:flex-row items-end justify-center gap-4 md:gap-8 z-10 px-4 pt-12 pb-16">
             <!-- Image -->
             <img src="Asstes/images/Logo_lady.png" alt="African Woman Cutout"
-                 class="h-[calc(100% + 100px)] md:h-[calc(100% + 150px)] lg:h-[calc(100% + 200px)] object-contain -mt-[100px] md:-mt-[150px] lg:-mt-[200px] flex-shrink-0">
+                class="h-[500px] md:h-[600px] lg:h-[700px] object-contain flex-shrink-0">
 
             <!-- Text Content -->
             <div class="text-center md:text-left flex-shrink-0">
@@ -366,6 +366,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- memory Gallery -->
     <section class="py-16 px-4 md:py-24 md:px-16 lg:py-32 lg:px-32 flex flex-col items-center justify-center text-center">
